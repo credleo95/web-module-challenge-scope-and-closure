@@ -157,9 +157,16 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(callback1,callback2,innings) {
-  
+function scoreboard(scoreArray,inningScore,innings) {
+  for(let i = 0; i < innings; i++){
+    scoreArray[i];
+  return `Inning ${innings} : Away ${inningScore} - Home ${inningScore}` 
+  }
+if (scoreArray[10] === scoreArray[10]){
+  return `This game will require extra innings: Away ${inningScore} - Home ${inningScore}`
 }
+}
+console.log(scoreboard(getInningScore(inning),inning(9)));
 
 
 
