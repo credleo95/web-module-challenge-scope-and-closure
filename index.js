@@ -28,12 +28,17 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+ 
+  Counter1 and Counter2 are an example of difference in scope. The variable: "count" in counter1 is function scoped. WHereas, the variable: "count" in counter2 is globally defined. 
+
   2. Which of the two uses a closure? How can you tell?
   
+  counter1 uses closure. I can tell because it has a function nested within. In order to access the function: counter, you have to invoke counterMaker. 
+
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
 */
+// the counter1 code would be preferable if the count variable was unique for this function. Whereas, the counter2 function would be useful if the count variable is not unique and will need to be utilized across multiple formulas. 
 
 // counter1 code
 function counterMaker() {
@@ -62,9 +67,11 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(maximum){
+  return Math.floor(Math.random() * 2);
+
 }
+console.log(inning());
 
 
 /* ⚾️⚾️⚾️ Task 3: finalScore() ⚾️⚾️⚾️
@@ -81,8 +88,9 @@ Use the finalScore function below to do the following:
 }
 */ 
 
-function finalScore(/*code Here*/){
-  /*Code Here*/
+function finalScore( callback, count){
+
+
 }
 
 /* ⚾️⚾️⚾️ Task 4: getInningScore() ⚾️⚾️⚾️
