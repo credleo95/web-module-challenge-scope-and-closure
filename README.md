@@ -43,6 +43,9 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+Closure is the defining of function or code boundaries within a variable's specific context. 
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -64,9 +67,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+Closure is used in this function at the return statement. This is because a new scope is being defined by the return statement. 
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+His name is always the same. The number is what could change. 
+
 c. What is the lexical scope of `newRoll`? 
 
+newRoll is contained within the anonymous function which is being returned. 
 
 ### Task 3 - Stretch Goals
 
